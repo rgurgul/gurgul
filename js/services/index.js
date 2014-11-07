@@ -1,0 +1,4 @@
+define([
+    './menuService',
+    './worksService'
+], function () {});

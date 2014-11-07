@@ -1,0 +1,11 @@
+{
+    "id": "tensalon",
+    "name": "TenSalon",
+    "design": "Brandish",
+    "description": "Strona salonu fryzjerskiego TenSalon. <br>Napisana została w technologii JavaScript oraz PHP z wykorzystaniem frameworku Kohana. Strona wyposażona została w autorski system zarządzania treścią(CMS) napisanym w technologii Adobe Flex.",
+    "images": [
+        "img/folio/tensalon.png"
+    ],
+    "url": "http://tensalon.pl",
+    "tech": ["html5", "js", "jquery", "flex", "kohana", "php"]
+}

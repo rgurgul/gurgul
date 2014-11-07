@@ -1,0 +1,23 @@
+<div style="width: 100%" class="box-horizontal nav-box">
+  <div class="logo-box">
+    <h1 class="rg no-select" ng-click="menuInterface.goToUrl('/about', 0)">robert gurgul</h1>
+  </div>
+  <div class="menu-main">
+    <ul class="menu-ul" ng-controller="mobileMenu">
+      <li class="menu-item-box-mobile-btn" ng-click="showMenu(); $event.stopPropagation();">
+        <hr>
+        <hr>
+        <hr>
+      </li>
+      <li ng-click="menuInterface.goToUrl(i.link, i.index)"
+        ng-mouseover="menuInterface.menuOver( this )"
+        ng-mouseout="menuInterface.menuOut( this )"
+        class="menu-item-box {{ 'ind-'+i.index }} no-select {{ i.id }}"
+        ng-repeat="i in menu | orderBy:'index':false">
+        <navitem class="menu-item"></navitem>
+      </li>
+    </ul>
+    <div class="token">
+    </div>
+  </div>
+</div>

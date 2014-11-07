@@ -1,0 +1,27 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip:after {
+  content: attr(data-tip);
+  font-size: 10px;
+  position: absolute;
+  bottom: 9999px;
+  left: 50%;
+  z-index: 3;
+  white-space: nowrap;
+  background:#1abc9c;
+  color:#ffffff;
+  padding:0px 5px;
+  line-height: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+}
+
+.tooltip:hover:after {
+  opacity: 1;
+  bottom: 35px;
+}

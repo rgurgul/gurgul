@@ -1,0 +1,84 @@
+@import "compass";
+@import "variables";
+//@import 'flexbox';
+
+.nav-box {
+  width : 100%;
+  .rg {
+    font-size      : $logo-font-size;
+    font-weight    : 100;
+    line-height    : $logo-font-size;
+    font-family    : $logo-font;
+    position       : relative;
+    left           : 0;
+    color          : $color-gray-fourth;
+    padding        : 0;
+    margin         : 0;
+    cursor         : pointer;
+    text-transform : uppercase;
+    letter-spacing : 1px;
+    //text-shadow    : 0px 0px 1px #d6d6d6;
+  }
+  .menu-main {
+    position : absolute;
+    top      : 225px;
+    left     : 366px;
+    cursor   : pointer;
+    opacity: 0;
+    .menu-ul {
+      position   : relative;
+      z-index    : 2;
+      padding    : 0;
+      margin     : 0;
+      list-style : none;
+      width      : 450px;
+      @include display-flex;
+      @include justify-content(flex-end);
+      .menu-item-box-mobile-btn {
+        display       : none;
+        width         : 30px;
+        border-radius : 2px;
+        hr {
+          margin        : 7px 0;
+          border        : 0;
+          border-bottom : 1px solid #ffffff;
+        }
+      }
+      .menu-item-box {
+        background-color : rgba(255, 255, 255, 0);
+        padding          : 0 10px;
+        border-radius    : 2px;
+        background-image : url(../img/shared/spacer.png);
+        span {
+          display        : block;
+          overflow       : hidden;
+          white-space    : nowrap;
+          line-height    : 18px;
+          text-transform : uppercase;
+        }
+        &.about span {
+          width : 49px;
+        }
+        &.folio span {
+          width : 77px;
+        }
+        &.contact span {
+          width : 64px;
+        }
+        &.mobile span {
+          width : 53px;
+        }
+      }
+    }
+    .token {
+      position         : absolute;
+      right            : 0;
+      z-index          : 1;
+      margin-top       : -18px;
+      width            : 0px;
+      height           : 19px;
+      background-color : $color-second;
+      border-radius    : 3px;
+    }
+  }
+}

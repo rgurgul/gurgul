@@ -1,0 +1,17 @@
+{
+  "name": "gurgul.info",
+  "version": "0.1",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "lib"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-resource": "latest",
+    "requirejs": "latest",
+    "requirejs-domready": "latest",
+    "requirejs-plugins": "~1.0.2"
+  }
+}

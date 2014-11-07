@@ -1,0 +1,4 @@
+define([
+    './menuInterface',
+    './reloadPageInterface'
+], function () {});

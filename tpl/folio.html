@@ -1,0 +1,49 @@
+<div class="box-horizontal in">
+  <div class="folio-init-text">
+    <div class="anim">
+
+      <div>Staram się aby kod, który piszę był podzielony na moduły.
+      Wykorzystuje wzorce projektowe oraz frameworki, które pomagają uporządkować oraz utrzymać kod.</div>
+
+      <br />
+      <a btn-anim-basic btn-anim-normal
+        class="link"
+        target="_blank"
+        title="przykładowy kod"
+        ng-href="https://github.com/rgurgul/gurgul"
+        style="position: relative; top: 3px;">
+      </a>
+
+      <br /><br />
+
+      <a btn-anim-basic
+        btn-anim-normal
+        class="link"
+        title="strony internetowe"
+        ng-click="menuInterface.goToUrl('/folio/masshiro', 1)"></a>
+
+
+
+
+    <br>
+    <br>
+
+    <div class="anim">szkolenia/referencje:</div>
+
+    <a btn-anim-basic
+      btn-anim-normal
+      ng-repeat="i in ref"
+      class="link group1 cboxElement"
+      style="margin: 0 2px"
+      title="{{'&nbsp' + ($index + 1) + '&nbsp'}}"
+      colorbox="{rel:'group1',transition:'fade'}"
+      href="{{i}}">
+
+
+      </a>
+    </div>
+
+
+
+  </div>
+</div>

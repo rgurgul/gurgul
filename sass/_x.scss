@@ -1,0 +1,30 @@
+@import "compass";
+.x{
+  display: none;
+  cursor: pointer;
+  height: $square-width;
+  width: $square-width;
+  background: white;
+  position: absolute;
+  z-index: 100;
+  line-height: $square-width - 5;
+  text-align: center;
+  font-size: 25px;
+  font-family: Raleway;
+  font-weight: 200;
+  @include transition(all 1s ease-in-out);
+  color: #aeaeae;
+}
+.x:before{
+  content: 'x';
+  border: solid $color-frame 1px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: $square-width - 1;
+  width: $square-width - 1;
+}
+
+.x:hover{
+  @include transform(rotate(360deg))
+}

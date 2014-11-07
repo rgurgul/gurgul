@@ -1,0 +1,12 @@
+{
+    "id": "allergodil",
+    "name": "allergodil",
+    "design": "Kombinat Multimedialny",
+    "description": "Gra napisana w technologii Adobe Flash.",
+    "images": [
+        "img/folio/gra.png"
+    ],
+    "url": "http://allergodil.pl/flash/gra.swf",
+    "tech": ["flash", "php"]
+}
+

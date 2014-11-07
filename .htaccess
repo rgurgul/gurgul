@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} www.gurgul.info$
+RewriteRule ^(.*)$ http://gurgul.info/$1  [R=301,L]
+
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/x-font-woff .woff
+AddType text/javascript .js
+
+
+<IfModule mod_mime.c>
+    AddType text/javascript .js
+</IfModule>

@@ -1,0 +1,84 @@
+@import "compass";
+@import "variables";
+
+.contact-box {
+  .form {
+    padding-top : 25px;
+    span {
+      text-transform : uppercase;
+      font-size      : 16px;
+    }
+    input, textarea {
+      &.ng-invalid.ng-dirty {
+        border-left : 2px solid $color-second;
+      }
+      &.ng-valid.ng-dirty {
+        border-left : 2px solid $color-first;
+      }
+    }
+    textarea, input {
+      display        : block;
+      height         : 20px;
+      padding        : 4px 6px;
+      line-height    : 20px;
+      color          : $color-gray-first;
+      vertical-align : middle;
+      border         : 1px solid #D6D6D6;
+      border-left    : 2px solid $color-second;
+      outline        : none;
+      width          : 444px;
+      box-shadow     : none;
+      font-family    : Dosis;
+      font-size      : 18px;
+      background     : $bg-img;
+    }
+    textarea {
+      height : 120px;
+    }
+    .message-sent {
+      color        : $color-second;
+      line-height  : 20px;
+      margin       : 0px;
+      padding-left : 10px;
+      @include box-sizing(border-box);
+      float        : left;
+      width        : 300px;
+    }
+    .btn-box {
+      margin         : 20px 0;
+      padding-bottom : 15px;
+      .btn {
+        float   : left;
+        cursor  : pointer;
+        border  : none;
+        outline : none;
+        &:disabled {
+          opacity : .5;
+          cursor  : default;
+        }
+      }
+    }
+  }
+}
+// google maps
+#map-canvas {
+  display  : none;
+  height   : 100%;
+  width    : 100%;
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  z-index  : 1;
+  .gm-style-iw {
+    + div {
+      display: none;
+    }
+  }
+  .info-window {
+    line-height : 1.35;
+    height      : 35px;
+    width       : 120px;
+    overflow    : hidden;
+    white-space : nowrap;
+  }
+}

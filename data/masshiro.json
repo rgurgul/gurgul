@@ -1,0 +1,11 @@
+{
+    "id": "masshiro",
+    "name": "Masshiro",
+    "design": "Masshiro",
+    "description": "Strona pracowni architektonicznej MASSHIRO. Zbudowana została na frameworku AngularJS. Użyłem też kilka pluginów jQuery - własnego autorstwa jak również innych developerów. Do strony napisałem systemem zarządzania treścią(CMS) z użyciem frameworka Backbone. CMS komunikuje się z RESTowym API napisanym we frameworku PHP SLIM.",
+    "images": [
+        "img/folio/masshiro.png"
+    ],
+    "url": "http://masshiro.pl",
+    "tech": ["html5", "js", "jquery", "backbone", "requirejs", "angular", "php"]
+}

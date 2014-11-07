@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Masshiro",
+        "imgUrl": "img/folio/masshiro2.jpg",
+        "description": "Strona z autorskim systemem CMS napisanym z użyciem Backbone framework.",
+        "url": "http://masshiro.pl",
+        "design": "Masshiro",
+        "tech": ["html5", "js", "jquery", "backbone", "angular", "php"]
+    },
+    {
+        "name": "Redłowo",
+        "imgUrl": "img/folio/redlowo.jpg",
+        "description": "",
+        "url": "http://redlowo.gurgul.info",
+        "design": "Anna Szczęsna",
+        "tech": ["html5", "js", "jquery"]
+    },
+    {
+        "name": "JW Construction konkurs",
+        "imgUrl": "img/folio/konkurs.jpg",
+        "description": "",
+        "url": "http://konkurs.naszeosiedla.pl",
+        "design": "Anna Szczęsna",
+        "tech": ["html5", "js", "jquery", "php"]
+    },
+    {
+        "name": "TenSalon",
+        "imgUrl": "img/folio/ten.jpg",
+        "description": "Strona z autorskim systemem CMS napisanym w technologii Adobe Flex.",
+        "url": "http://tensalon.pl",
+        "design": "Brandish",
+        "tech": ["html5", "js", "jquery", "flex", "kohana", "php"]
+    },
+    {
+        "name": "Allergodil",
+        "imgUrl": "img/folio/biedronka.jpg",
+        "description": "",
+        "url": "http://allergodil.pl/flash/gra.swf",
+        "design": "Kombinat Multimedialny",
+        "tech": ["flash", "php"]
+    }
+]

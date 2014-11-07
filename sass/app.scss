@@ -1,0 +1,12 @@
+//fonty laduje przez css i js. js zwraca event loaded. css zapobiega wyswietlaniu fontu domyslengo zanim font sie zaladuje.
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400|Wire+One&subset=latin,latin-ext);
+@import "compass";
+@import "variables";
+@import "style";
+@import "shared";
+@import "nav";
+@import "folio";
+@import "galaxy";
+@import "contact";
+@import "about";
+@import "mobile";

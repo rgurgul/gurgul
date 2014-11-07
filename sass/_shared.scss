@@ -1,0 +1,120 @@
+@import "compass/css3/user-interface";
+@import "variables";
+//@import 'flexbox';
+@import "compass";
+
+body {
+  .box-horizontal {
+    @include display-flex;
+    //vertical align
+    @include align-items(center);
+  }
+  ul, li {
+    padding         : 0;
+    margin          : 0;
+    list-style-type : none;
+  }
+  .link {
+    text-decoration : none;
+    text-transform  : capitalize;
+  }
+  .no-select {
+    @include user-select(none);
+  }
+  .anim > * {
+    opacity : 0;
+  }
+  .online {
+    display        : inline-block;
+    @include box-sizing(border-box);
+    position       : relative;
+    cursor         : pointer;
+    background     : $bg-img;
+    text-align     : center;
+    line-height    : 24px;
+    padding        : 3px 5px 0px 10px;
+    font-family    : $main-font;
+    font-size      : 16px;
+    letter-spacing : 1px;
+    text-transform : uppercase;
+    outline        : none;
+    &:after {
+      content  : '';
+      border   : solid 1px $color-frame;
+      width    : -webkit-calc(100% - 1px);
+      width    : -moz-calc(100% - 1px);
+      width    : calc(100% - 1px);
+      height   : -webkit-calc(100% - 1px);
+      height   : -moz-calc(100% - 1px);
+      height   : calc(100% - 1px);
+      position : absolute;
+      left     : 2px;
+      top      : 2px;
+    }
+  }
+  .silver-bg {
+    background     : url(../img/shared/bg/pattern-28ey.png);
+    display        : inline-block;
+    /*border-radius  : 2px;
+    border         : 1px solid #eaeaea;*/
+    text-transform : uppercase;
+    color          : $color-gray-second;
+    /*font-weight    : 400;*/
+    padding        : 0px 5px;
+  }
+  .coral-bg {
+    background-color : $color-second;
+    padding          : 0 4px;
+    border-radius    : 2px;
+    height           : 19px;
+    span {
+      display        : block;
+      white-space    : nowrap;
+      line-height    : 18px;
+      text-transform : uppercase;
+      color          : #ffffff;
+      padding        : 0 3px;
+    }
+  }
+  .stronger {
+    font-weight : 400 !important;
+  }
+  [btn-anim-basic] {
+    background-color : $color-first;
+    display          : inline-block;
+    padding          : 0;
+    border-radius    : 2px;
+    height           : 19px;
+    position         : relative;
+    overflow         : hidden;
+    cursor           : pointer;
+    div.anim-box {
+      position       : absolute;
+      top            : -24px;
+      display        : block;
+      overflow       : hidden;
+      white-space    : nowrap;
+      line-height    : 18px;
+      text-transform : uppercase;
+      padding        : 0 3px;
+      div {
+        color : #ffffff;
+      }
+    }
+  }
+  .brackets {
+    &:before {
+      content: '[';
+      position: relative;
+      left: -3px;
+      padding-left: 5px;
+    }
+    &:after {
+      content: ']';
+      position : relative;
+      left: 3px;
+      padding-right: 8px;
+    }
+  }
+}
+

@@ -1,0 +1,69 @@
+@import "compass";
+@import "compass/css3/shared";
+@import "variables";
+//@import 'flexbox';
+
+html, body {
+  height   : 100%;
+  overflow : hidden;
+  margin   : 0;
+  padding  : 0;
+}
+
+body {
+  //background  : $bg-img-main right repeat-y, $bg-img left;
+  background-image    : $bg-img-main;
+  background-position : center;
+  //background-image  : url(http://www.leading-art.com/images/bgartwork.png);
+  .wrapper {
+    // wrapper musie być wyżej od map-canvas
+    z-index  : 2;
+    position : relative;
+    height   : 100%;
+    margin   : 0 auto;
+    width    : $main-width;
+    @include flex-direction(row);
+    span, div, a {
+      font-family : $main-font;
+      color       : $color-gray-first;
+      font-size   : 18px;
+      line-height : 22px;
+      font-weight : 300;
+    }
+    .nav {
+      @include order(0);
+      @include flex(0 1 $container-left-width);
+      height   : 100%;
+      position : relative;
+      width    : 200px;
+      @include box-sizing(border-box);
+      /*&:before {
+        content  : "";
+        position : absolute;
+        width    : 1px;
+        top      : 20%;
+        bottom   : 20%;
+        right    : 0px;
+        @include background-image(linear_gradient(#f7f7f7, #dddddd, #f7f7f7))
+      }*/
+    }
+    .content {
+      @include box-sizing(border-box);
+      height       : 100%;
+      padding      : 0;
+      padding-left : 48px;
+      @include order(1);
+      //flex         : 0 1 1000 - $container-left-width;
+      @include flex(0 1 1000 - $container-left-width);
+      .loading {
+        position    : absolute;
+        z-index     : 4;
+        top         : 50%;
+        left        : 50%;
+        margin-left : -35px;
+        margin-top  : -10px;
+        color       : #999;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "index": 0,
+        "id": "about",
+        "name": "O mnie",
+        "link": "/about"
+    },
+    {
+        "index": 1,
+        "id": "folio",
+        "name": "Portfolio",
+        "link": "/folio",
+        "menuFolio": ["masshiro", "tensalon", "redlowo", "allergodil"]
+    },
+    {
+        "index": 2,
+        "id": "contact",
+        "name": "Kontakt",
+        "link": "/contact"
+    },
+    {
+        "index": 3,
+        "id": "mobile",
+        "name": "Mobile",
+        "link": "/mobile"
+    }
+]

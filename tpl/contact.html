@@ -1,0 +1,38 @@
+<div class="in contact-box">
+  <form class="form" name="exampleForm" method="POST">
+    <div class="horizontal-box anim">
+      <div class="anim">
+        <div>
+          <span class="">Twoje imię</span>
+        </div>
+        <input ng-model="user.name" ng-minlength=4 required type="text" autofocus ng-click="onFocus()" />
+      </div>
+      <br>
+
+      <div class="anim">
+        <div>
+          <span class="">Twój e-mail</span>
+        </div>
+        <input ng-model="user.email" required type="email" ng-click="onFocus()" />
+      </div>
+      <br>
+    </div>
+
+    <div class="anim">
+      <div>
+        <span class="">Wiadomość</span>
+      </div>
+      <textarea ng-model="user.message" name="user.message" ng-minlength=4 required rows="5" ng-click="onFocus()"
+        ></textarea>
+    </div>
+
+    <div class="btn-box anim">
+      <div>
+        <button btn-anim-basic btn-anim-normal class="btn" title="wyślij"
+          ng-click="sendMessage(user)" ng-disabled='!exampleForm.$valid'></button>
+      </div>
+      <p class="message-sent" ng-show="btnVisible">
+        Wiadomość została wysłana.</p>
+    </div>
+  </form>
+</div>

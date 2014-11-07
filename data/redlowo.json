@@ -1,0 +1,11 @@
+{
+    "id": "redlowo",
+    "name": "JW Construction",
+    "design": "Anna Szczęsna",
+    "description": "Strona poświęcona nowej nadmorskiej inwestycji firmy JW Construction. Strona zawiera dużą ilością animacji HTML5 wykonanych w technologii CANVAS oraz jQuery.",
+    "images": [
+        "img/folio/redlowo.png"
+    ],
+    "url": "http://redlowo.gurgul.info",
+    "tech": ["html5", "js", "jquery"]
+}

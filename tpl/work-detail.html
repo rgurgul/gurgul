@@ -1,0 +1,59 @@
+<div class="in folio-box">
+  <div class="folio-desc-box">
+    <div>
+      <dl class="anim">
+        <dt class="silver-bg">
+          Klient
+        </dt>
+        <dd>{{work.name}}</dd>
+        <dt class="silver-bg">
+          Projekt graficzny
+        </dt>
+        <dd>{{work.design}}</dd>
+        <div ng-show="work.description != ''">
+          <dt class="silver-bg">
+            Opis
+          </dt>
+          <dd class="desc" compile="work.description"></dd>
+        </div>
+        <dt class="silver-bg">
+          Użyte technologie
+        </dt>
+        <dd class="techno" compile="work.tech.join(', ')"></dd>
+      </dl>
+      <div class="anim">
+        <a btn-anim-basic btn-anim-normal class="link" ng-href={{work.url}} title="Zobacz online" target="_blank"></a>
+      </div>
+    </div>
+    <div class="anim show-more">
+      <span>Zobacz inne prace</span>
+    </div>
+    <div class="folio-nav-box">
+      <div class="box-horizontal">
+        <ul class="folio-work-ul box-horizontal">
+          <span class="online arr prev disable-{{work.id == subject}}"
+            ng-click="changeFolio(-1)">
+            <div class="no-select ">
+              <div class="txt">&nbsp;<</div>
+            </div>
+          </span>
+          <li
+            class="visible-{{work.id == subject}}"
+            ng-repeat="subject in menu[1].menuFolio"
+            ng-click="menuInterface.goToUrl('/folio/' + subject)">
+            <span> {{$index+1}} </span>
+          </li>
+          <span class="online arr next disable-{{work.id == subject}}"
+            ng-click="changeFolio(1)">
+            <div class="no-select ">
+              <div class="txt">&nbsp;></div>
+            </div>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="anim">
+    <img ng-src="{{work.images[0]}}" class="img-folio">
+  </div>
+</div>

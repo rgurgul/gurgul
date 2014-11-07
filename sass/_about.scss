@@ -1,0 +1,86 @@
+@import "compass";
+@import "compass/css3/images";
+@import "variables";
+
+.about-box {
+  position : relative;
+  width    : 570px;
+  .item-box {
+    .btn-box {
+      &.plus, &.minus {
+        &:before {
+          position    : absolute;
+          left        : -14px;
+          line-height : 14px;
+          color       : $color-gray-second;
+          font-size   : 32px;
+          font-family : Wire One;
+        }
+      }
+      &.plus:before {
+        content : "+";
+      }
+      &.minus:before {
+        content : "-";
+      }
+    }
+    .item-desc {
+      display : none;
+      margin  : 5px 0 13px 0;
+      .about {
+        .about-desc {
+          width: 80%;
+        }
+        .about-img {
+          width: 20%;
+        }
+      }
+      .summary {
+        text-align: right;
+        .summary-title {
+          width: 23%;
+          text-align: left;
+          :first-child {
+            margin: 0
+          }
+          :last-child {
+            font-size: 22px;
+            text-align: right;
+            margin: 0
+          }
+        }
+        .summary-desc {
+          width: 77%;
+          padding-left: 65px;
+        }
+      }
+      .desc-second {
+        text-align : justify;
+        margin-top : 10px;
+      }
+      .ja {
+        float         : right;
+        margin        : 0 0px 0px  15px;
+        border-radius : 55px;
+        opacity       : .95;
+        width         : 110px;
+      }
+      li {
+        padding : 3px 0;
+        &:not(:last-child) {
+          border-bottom : dashed 1px #ddd;
+        }
+        .strong {
+          color         : $color-gray-second;
+          /*font-weight   : 400;*/
+          &.block {
+            display : block;
+          }
+          + span {
+            color : $color-gray-first;
+          }
+        }
+      }
+    }
+  }
+}

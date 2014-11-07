@@ -1,0 +1,11 @@
+{
+    "id": "konkurs",
+    "name": "JW Construction",
+    "design": "Anna Szczęsna",
+    "description": "Strona konkursu dotyczącego wybrania nazwy nowych inwestycji JW Construction.",
+    "images": [
+        "img/folio/konkurs.png"
+    ],
+    "url": "http://konkurs.gurgul.info",
+    "tech": ["html5", "js", "jquery", "php"]
+}
